@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Sansation Light';
+  src: url('./assets/font/Sansation/Sansation-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+  font-family: 'Sansation Light', sans-serif;
+}
+
+
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* 3D flip support */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.rotate-y-0 {
+  transform: rotateY(0deg);
+}
+
+
+.animate-fadeInUp{
+  animation: fadeInUp 0.3s ease-out forwards;
+} 
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'customFont';
+  src: url('./assets/fonts/signategrotesk-black.ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'customFont';
+  src: url('./assets/fonts/signategrotesk-black.ttf');
+  font-weight: 700;
+}
+
+#customButton {
+  background-color: #20576E;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#customButton:hover {
+  background-color: #174755;
+}
