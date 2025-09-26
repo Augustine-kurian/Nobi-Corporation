@@ -22,14 +22,24 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="w-[150px] h-[100px] md:w-[300px] md:h-[250px] object-contain mb-4 md:w-1/3"/>
-         <motion.p className="text-center w-full md:w-1/2 px-5"
+         <motion.p className="text-center w-full px-5"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
-          A dedicated team of professionals working together on every brand.
-          Gaining a 360-degree understanding to ensure there is no part of the brand’s story
-          that’s left untold, brainstorming extensively and filter every idea
-          that comes our way and choosing what best aligns with the brand and its story.
+          A team of experts<br/>
+          providing you business solutions<br/>
+          to exporsure rapid growth.<br/>
+          We provide 360<sup>°</sup> total branding solutions<br/>
+          and ensure that there is no part of<br/>
+          your brand's story that's left untold.<br/>
+          Working closely with your sales team<br/>
+          We develop strategies that takes<br/>
+          your business closer to the customer.
+          {/* A dedicated team <br/>of professionals working together<br/> on your brand.
+          <br/>Providing a 360<sup>°</sup> total branding solution for your business.<br/>
+          And ensuring there is no part of the brand’s story
+          that’s left untold. Extensive brainstorming sessions with your sales team
+          ensures every idea is expressed in the most of effective way. */}
          </motion.p> 
       </div> 
       </div>

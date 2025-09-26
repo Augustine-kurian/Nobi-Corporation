@@ -90,15 +90,17 @@ useEffect(() => {
             className="w-full h-full"
           >
             {/* 👇 JELLYFISH — Top Left */}
-            {/* <Jellyfish src="./images/img2.png" size={220} /> */}
+             {/* <Jellyfish src="./images/img2.png" size={220} />  */}
 
             {/* 👇 TOWER — Center Right */}
-            {/* <Tower src="./images/img2.png" size={200} /> */}
+             {/* <Tower src="./images/img2.png" size={200} />  */}
 
             {/* 👇 BALL — Bottom Left */}
-            {/* <Ball src="./images/img3.png" size={180} /> */}
+             <Ball src="./images/img3.png" size={180} /> 
 
             {/* Optional: Add ambient light for softness */}
+        
+        
             <ambientLight intensity={0.4} />
             <directionalLight position={[1, 1, 1]} intensity={0.6} />
           </Canvas>
@@ -108,10 +110,11 @@ useEffect(() => {
         <div className="flex flex-col md:flex-row items-center items-stretch justify-center">
           <div className='w-1/2 flex items-end justify-center'>
           <div ref={typeCategoryRef} className='flex gap-4 mb-4 slideLeft'>
-            <span>{type}</span>
-            <span>{category}</span>
+
           </div>
-          </div>
+        </div>
+
+
 
           <div className='w-full md:w-1/2 flex flex-col items-start justify-start mb-4'> 
             <ul className='list-style-none text-xl ms-[3rem] md:mt-5 gap-3 flex flex-col'>
