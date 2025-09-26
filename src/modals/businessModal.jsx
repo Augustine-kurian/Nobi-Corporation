@@ -39,10 +39,9 @@ function businessModal({isOpen, onClose, position, desc, index}) {
       onClick={(e) => e.stopPropagation()}
       style={{top: `${position.top}px` , left: `${position.left}px`}}>
         <button id={`closeModalButton${index}`} onClick={() => handleClose()} className='flex absolute top-2 right-4 justify-end'>X</button>
-        <p>{desc}</p>
+        <p className='text-xs'>k{desc}</p>
       </div>
-  }
-      
+  } 
   </>
 }
 

@@ -30,7 +30,7 @@ export default function Navbar() {
         isScrolled ? "py-1" : "py-3"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+      <div className="mx-5 px-4 py-2 flex justify-between items-center">
         <div className={` ${isScrolled ? 'h-10' : 'h-16'} w-16 perspective-1000`}>
           <div className={`relative w-full h-full transition-transform duration-700 ease-in-out transform-style-preserve-3d ${
             isScrolled ? "rotate-y-180" : "rotate-y-0"
@@ -49,7 +49,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 text-blue font-medium">
+        <ul className="hidden md:flex gap-28 text-blue font-medium">
           <li>
             <a href="#home">Home</a>
           </li>

@@ -77,10 +77,10 @@ useEffect(() => {
       <section id='business' className={`${bgClass} w-full`}>
   
           <div className="flex relative flex-col items-center justify-center min-h-screen">
-            <h1 className="text-4xl md:text-8xl font-bold mb-6 tracking-[0.2em] md:tracking-[0.3em] text-black w-full mt-[0px] md:mt-[150px] text-center relative">
+            <h1 className="text-4xl md:text-8xl font-bold mb-6 tracking-[0.2em] md:tracking-[0.3em] text-gray-500 w-full mt-[0px] md:mt-[150px] text-center relative">
               {heading}  
             </h1>   
-            <p className='text-center w-1/2'>
+            <p className='md:text-center md:w-1/2 px-5 md:px-0'>
               {headingDesc}
             </p>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none w-full h-full">
@@ -102,9 +102,7 @@ useEffect(() => {
             <ambientLight intensity={0.4} />
             <directionalLight position={[1, 1, 1]} intensity={0.6} />
           </Canvas>
-        </div>
-
-      
+        </div>      
         </div>
 
         <div className="flex flex-col md:flex-row items-center items-stretch justify-center">
@@ -116,7 +114,7 @@ useEffect(() => {
           </div>
 
           <div className='w-full md:w-1/2 flex flex-col items-start justify-start mb-4'> 
-            <ul className='list-style-none text-xl ms-[3rem] gap-3 flex flex-col'>
+            <ul className='list-style-none text-xl ms-[3rem] md:mt-5 gap-3 flex flex-col'>
               {
                 topics.map((topic, index) => (  
                   <li key={index} ref={(ele) => topicRefs.current[index] = ele}
@@ -130,7 +128,7 @@ useEffect(() => {
                   }}>{topic.topic}</a>
 
                 {((activeTopicIndex === index) && isModalOpen) ? (
-                 <div ref={modalRef} className="mt-3 me-3 p-2 animate-fadeInUp bg-[#ebdfe1] rounded shadow-lg w-full max-w-lg md:mx-auto">
+                 <div ref={modalRef} className="mt-3 me-5 p-2 animate-fadeInUp bg-[#ebdfe1] rounded shadow-lg max-w-lg md:mx-auto">
                   <button
                     id={`closeModalButton${index}`}
                     onClick={() => {
@@ -141,7 +139,7 @@ useEffect(() => {
                   >
                   ×
                 </button>
-            <p className="mt-8">{selectedDesc}</p>
+            <p className="mt-8 text-sm md:text-xl">{selectedDesc}</p>
           </div>) : null}
                   </li>
                 ))
@@ -149,7 +147,6 @@ useEffect(() => {
             </ul>
           </div> 
         </div>
-
       </section >
     )
   }
