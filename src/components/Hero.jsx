@@ -11,7 +11,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl ms-3 md:text-8xl w-full md:w-2/3 font-customFont-100 mb-6 tracking-[0.1em] text-gray-500"
+        className="text-4xl ms-3 md:text-8xl w-full md:w-2/3 font-custom font-thin mb-6 tracking-[0.1em] text-gray-500"
       >
         ONE STOP DESTINATION FOR YOUR BUSINESS SOLUTIONS
       </motion.h1>

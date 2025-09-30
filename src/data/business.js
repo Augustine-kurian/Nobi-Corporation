@@ -1,7 +1,8 @@
 export const businessData = [
     {
-        heading: 'BUSINESS DEVELOPEMENT',
+        heading: 'BUSINESS DEVELOPMENT',
         headingDesc: 'We offer comprehensive business development, deliver end-to-end growth solutions, ranging from business strategy consulting and market entry support to building distribution networks, forging industry collaborations, and driving projects from conception through execution.',
+        image:'/images/img1.png',
         topics:[
             {
             topic: 'Strategic Business Advisory',
@@ -28,6 +29,7 @@ export const businessData = [
     {
       heading: 'BRANDING SOLUTIONS',
       headingDesc: 'We help brands build powerful and consistent brand identities that connect with audiences and create long-term value for the brand.',
+      image:'/images/img2.png',
       topics:[
             {
             topic: 'Brand Building',
@@ -62,6 +64,7 @@ export const businessData = [
     {
       heading: 'DIGITAL MARKETING',
       headingDesc: 'We offer integrated Digital Marketing services designed to help your brand grow, engage, and succeed in the digital space. Our method of strategizing and executing combines creativity, strategy, and data-driven insights to deliver measurable results. From enhancing your online visibility to building meaningful customer connections, we provide end-to-end solutions tailored to your brand’s needs.',
+      image:'/images/img3.png',
       topics:
       [
            {
@@ -92,6 +95,7 @@ export const businessData = [
      {
       heading: 'EVENT MANAGEMENT',
       headingDesc: 'We specialize in planning and executing events that are thoughtfully designed to meet your goals and leaving ever-lasting impressions in the minds of customers. From planning the concept to completion, our team manages every detail with precision and creativity, ensuring a seamless and memorable experience tailored to your needs.',
+      image:'/images/img3.png',
          topics:[
             {
             topic: 'Organizing Dealer Meets, Conferences for Professionals & Off-site Meets',
@@ -106,6 +110,7 @@ export const businessData = [
     {
       heading: 'INTERIOR DESIGN & FABRICATION',
       headingDesc: 'We have a designated team that focuses on interior design and fabrication solutions, tailored to create functional, aesthetic, and innovative spaces that reflect the brand identity and story, while maintaining practicality and comfort.',
+      image:'/images/img1.png',
       topics:
       [
             {

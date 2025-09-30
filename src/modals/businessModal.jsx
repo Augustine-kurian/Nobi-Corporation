@@ -31,15 +31,15 @@ function businessModal({isOpen, onClose, position, desc, index}) {
     }
 
   if(!isOpen && !showModal) return null;
- 
   return <>
   {
       <div className={`bg-[#ebdfe1] p-6 absolute transition-all z-5 duration-300 opacity-100 rounded shadow-lg w-11/12 max-w-lg
       ${animateModal ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
       onClick={(e) => e.stopPropagation()}
       style={{top: `${position.top}px` , left: `${position.left}px`}}>
-        <button id={`closeModalButton${index}`} onClick={() => handleClose()} className='flex absolute top-2 right-4 justify-end'>X</button>
-        <p className='text-xs'>k{desc}</p>
+
+        <button id={`closeModalButton${index}`} onMouseEnter={() => handleClose()} className='flex absolute top-2 right-4 justify-end'>X</button>
+        <p className='text-xs'>{desc}</p>
       </div>
   } 
   </>
