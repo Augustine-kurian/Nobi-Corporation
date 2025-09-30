@@ -5,12 +5,15 @@ import { businessData } from "./data/business";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <>
       <Navbar />
+
       <Hero />
+      
       {
         businessData.map((business, index) => (
           <BusinessSection key = {index} {...business} index = {index} />
@@ -19,6 +22,9 @@ export default function App() {
       <About />
       {/* <Services /> */}
       <Contact />
+      <Footer />
+      
+      
     </>
   );
 }

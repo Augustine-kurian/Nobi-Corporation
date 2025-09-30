@@ -29,7 +29,7 @@ function About() {
     <section id='about' className='flex flex-col md:flex-row items-center justify-center bg-radial-ellipse'>
       
       {/* Left Column */}
-      <div  className='flex flex-col slideLeft items-center justify-center w-full md:w-1/2 px-5 py-5'>
+      <div  className='flex flex-col slideLeft items-center justify-center w-full md:w-1/2 px-3 py-5'>
         <div ref = {leftAnimationRef1} className='mx-5 my-5 px-5 py-5 flex flex-wrap text-2xl'>
            Nobi Corporation brings to you integrated solutions for your business, ranging from business development, interior designing, exhibitions to branding. 
         </div>
