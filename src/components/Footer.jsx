@@ -6,7 +6,7 @@ import { CiMobile1 } from "react-icons/ci";
 
 function Footer() {
   return <> 
-     <div className='bg-radial-ellipse py-8 md:py-3'>
+     <section className='py-8 md:py-3'>
         <h1 className='text-brand text-center font-bold text-xl'>Contact</h1>
         <div className='flex flex-col md:flex-row items-center md:justify-around'>
         <div className='my-3'>
@@ -46,7 +46,7 @@ function Footer() {
       </div>
       <hr className='mx-5 border-brand'/>
       <p className='text-gray-500 my-2 text-center text-sm md:text-base'>Copyrights 2025 © All rights reserved by Nobi Corporation.</p>
-     </div>
+     </section>
   </>
 }
 
