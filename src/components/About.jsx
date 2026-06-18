@@ -26,7 +26,7 @@ function About() {
   }) 
 
   return (
-    <section id='about' className='flex flex-col md:flex-row items-center justify-center bg-radial-ellipse'>
+    <section id='about' className='panel h-screen flex flex-col md:flex-row items-center justify-center'>
       
       {/* Left Column */}
       <div  className='flex flex-col slideLeft items-center justify-center w-full md:w-1/2 px-3 py-5'>

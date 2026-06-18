@@ -60,7 +60,7 @@ function Contact() {
   return (
     <section id='contact' className='panel h-screen flex flex-col md:flex-row items-stretch gap-10 justify-center py-10 px-5'>
       
-      {/* Service Form */}
+      {/* Service Form n */}
       <form 
         ref={serviceFormRef} 
         name='contact' 

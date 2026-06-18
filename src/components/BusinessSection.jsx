@@ -9,7 +9,8 @@ import Ball from './Ball';
 
   function BusinessSection({heading, headingDesc, topics, image, type, category, index}) {
 
-    const bgClass = index % 2 === 0 ? 'bg-radial-ellipse-even' : 'bg-radial-ellipse';
+    const bgClass = 'bg-radial-ellipse-even';
+    // const bgClass = index % 2 === 0 ? 'bg-radial-ellipse-even' : 'bg-radial-ellipse';
     
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedDesc, setSelectedDesc] = useState('');
@@ -55,7 +56,7 @@ useEffect(() => {
 
 
     return (
-      <section id='business' className={`${bgClass} w-full`}>
+      <section id='business' className={`${bgClass} w-full h-screen panel`}>
   
           <div className="flex relative flex-col items-center justify-center py-[50px]">
             <h1 id={`${headingId}`} className="text-4xl md:text-8xl font-thin mb-6 tracking-[0.2em] md:tracking-[0.3em] text-gray-500 w-full mt-[0px] md:mt-[150px] text-center relative">

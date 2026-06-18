@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id='home' className="flex  items-center pt-[120px] bg-radial-ellipse justify-left text-left">
+    <section id='home' className="flex panle min-h-screen items-center pt-[120px] justify-left text-left">
      <div className="flex flex-col md:flex-row mx-5">
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
