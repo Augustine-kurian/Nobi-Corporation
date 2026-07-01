@@ -11,64 +11,10 @@
   font-style: normal;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f9f9f9;
+body{
+  font-family: 'Sansation Light', sans-serif;
 }
 
-canvas {
-  display: block;
-}
-
-.text-gray-500 {
-  color: #666;
-}
-
-/* In your global CSS file */
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px; /* Important for 3D effect */
-  transform-style: preserve-3d;
-}
-
-body {
-  transform-style: preserve-3d;
-}
-
-.panel {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.1s linear, opacity 0.3s ease;
-  will-change: transform, opacity;
-  min-height: 100vh;
-  width: 100%;
-}
-
-/* Enhanced animations for more cinematic feel */
-@keyframes slideInFromDeep {
-  0% {
-    opacity: 0;
-    transform: translateZ(-2000px) scale(0.8);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateZ(-500px) scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: translateZ(0) scale(1);
-  }
-}
-
-.animate-cinematic {
-  animation: slideInFromDeep 1.5s ease-out forwards;
-}
 
 @keyframes fadeInUp{
   from{
@@ -81,33 +27,6 @@ body {
     transform: translateY(0px);
   }
 }
-
-/* Add these to your CSS */
-.panel-content {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  transform-style: preserve-3d;
-}
-
-/* Ensure text is readable during animations */
-.text-content {
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  color: white;
-  mix-blend-mode: lighten;
-}
-
-/* Navigation z-index fix */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  transform: translateZ(100px); /* Keep nav in front */
-}
-
 /* 3D flip support */
 .perspective-1000 {
   perspective: 1000px;
